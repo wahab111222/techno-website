@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #dot:checked ~ .parent{
+        margin-left: 100px;
+        transform: rotate(360deg);
+     }
+     #dot1:checked ~ .parent1{
+        margin-left: 375px;
+        transform: rotate(360deg);
+        margin-top: -302px;
+     } 
+     #dot2:checked ~ .parent2{
+        margin-left: 645px;
+        margin-top: -302px;
+        transform: rotate(360deg);
+
+     }
+    #dot3:checked ~ .parent3{
+        margin-left: 915px;
+        transform: rotate(360deg);
+        margin-top: -302px;
+     }
+    .parent{
+        border: 1px solid #000;
+        width: 250px;
+        height: 300px;
+        transition: all 1s;
+    }
+    .parent1{
+        border: 1px solid #000;
+        width: 250px;
+        height: 300px;
+        transition: all 1s;
+    }
+    .parent2{
+        border: 1px solid #000;
+        width: 250px;
+        height: 300px;
+        transition: all 1s;
+    }
+    .parent3{
+        border: 1px solid #000;
+        width: 250px;
+        height: 300px;
+        transition: all 1s;
+    }
+    
+    .parent>img{
+        height: 100%;
+        width: 100%;
+    } 
+    .parent1>img{
+        height: 100%;
+        width: 100%;
+    } 
+    .parent2>img{
+        height: 100%;
+        width: 100%;
+    }
+    .parent3>img{
+        height: 100%;
+        width: 100%;
+    } 
+    </style>
+</head>
+<body>
+    <input type="radio" name="dot" id="dot"/>spiderman
+    <input type="radio" name="dot1" id="dot1"/>superman
+    <input type="radio" name="dot2" id="dot2"/>batman
+    <input type="radio" name="dot3" id="dot3"/>ironman
+
+    <div class="parent">
+        <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+    </div>
+    <div class="parent1">
+        <img src="https://cdn.theatlantic.com/thumbor/cTP7DsiUyI81zFg8c-FDnIoCBhA=/540x0:2340x1800/540x540/media/img/mt/2016/01/superman/original.jpg" alt="">
+    </div>
+    <div class="parent2">
+        <img src="https://wallpapers.com/images/hd/iron-man-mark-xvi-iynxrwgqi2nwhhe0.jpg" alt="">
+    </div>
+    <div class="parent3">
+        <img src="https://images3.alphacoders.com/723/72397.jpg" alt="">
+    </div>
+</body>
+</html>
